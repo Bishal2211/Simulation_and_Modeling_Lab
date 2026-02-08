@@ -1,11 +1,17 @@
 # Simulation and Modeling Lab – Assignment 01
 
 **Course Code:** CSE 413
+
 **Name:** Ismam Ahmed
+
 **ID:** 0432220005101116
+
 **Section:** 7B2
+
 **Batch:** 53
+
 **Semester:** Spring 2026
+
 
 ---
 
