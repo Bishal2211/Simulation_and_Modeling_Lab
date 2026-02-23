@@ -1,156 +1,136 @@
-Simulation and Modeling Lab – Assignment 02
+# Simulation and Modeling Lab – Assignment 03  
+**Course Code:** CSE 413  
 
-Course Code: CSE 413
+**Name:** Ismam Ahmed  
+**ID:** 0432220005101116  
+**Section:** 7B2  
+**Batch:** 53  
+**Semester:** Spring 2026  
 
-Name: Ismam Ahmed
-ID: 0432220005101116
-Section: 7B2
-Batch: 53
-Semester: Spring 2026
+---
 
-Assignment Overview
+## Assignment Overview
+This project contains the solution for **Simulation and Modeling Lab – Assignment 03**.  
+The assignment focuses on simulating customer wait times using probability distributions and analyzing the results through visualization and statistical methods using Python.
 
-This project contains the solution for Simulation and Modeling Lab – Assignment 02.
-The assignment focuses on simulating customer wait times using probability distributions and analyzing the results through visualization and statistical methods in Python.
+---
 
-Problem Description
-
+## Problem Description
 A customer service center analyzes how long customers wait before being served.
 
-Regular Days: Wait times follow a Uniform Distribution between 2 and 12 minutes
+- **Regular Days:** Wait times follow a **Uniform Distribution** between **2 and 12 minutes**
+- **Busy Days:** Wait times follow a **Normal Distribution**
+  - Mean = 8 minutes  
+  - Standard Deviation = 2 minutes  
 
-Busy Days: Wait times follow a Normal Distribution
+The objective is to simulate and compare both scenarios.
 
-Mean = 8 minutes
+---
 
-Standard Deviation = 2 minutes
+## Tasks
 
-The goal is to simulate both scenarios and compare their behavior.
+### Part 1 – Data Generation
+- Generate **3000 wait times** using Uniform Distribution (2–12 minutes)
+- Generate **3000 wait times** using Normal Distribution (mean = 8, std = 2)
+- Replace negative values in normal distribution with **0**
 
-Tasks
-Part 1 – Data Generation
+**Concepts Used**
+- Random number generation (`numpy.random`)
+- Uniform distribution
+- Normal distribution
+- Data preprocessing
 
-Generate 3000 wait times using Uniform Distribution (2–12 minutes)
+---
 
-Generate 3000 wait times using Normal Distribution (mean = 8, std = 2)
+### Part 2 – Visualization
+- Plot histograms for both datasets
+- Include:
+  - Title
+  - Axis labels
+  - Appropriate bins
+  - Grid (optional)
 
-Replace negative values in normal distribution with 0
+**Concepts Used**
+- Data visualization using Matplotlib
+- Distribution comparison
 
-Concepts Used
+---
 
-Random number generation (numpy.random)
-
-Uniform distribution
-
-Normal distribution
-
-Data cleaning
-
-Part 2 – Visualization
-
-Plot histograms for both datasets
-
-Include:
-
-Title
-
-Axis labels
-
-Appropriate bins
-
-Grid (optional)
-
-Concepts Used
-
-Data visualization using Matplotlib
-
-Distribution comparison
-
-Part 3 – Statistical Analysis
-
+### Part 3 – Statistical Analysis
 For both datasets, calculate:
+- Mean  
+- Median  
+- Standard deviation  
+- Maximum wait time  
 
-Mean
+**Concepts Used**
+- Descriptive statistics using NumPy
+- Simulation analysis
 
-Median
+---
 
-Standard deviation
+## Libraries Used
+- numpy  
+- matplotlib  
 
-Maximum wait time
-
-Concepts Used
-
-Descriptive statistics using NumPy
-
-Simulation analysis
-
-Libraries Used
-
-numpy
-
-matplotlib
-
-(Optional)
-
-seaborn
-
-sympy
+(Optional)  
+- seaborn  
+- sympy  
 
 Install required libraries:
 
+```bash
 pip install numpy matplotlib seaborn sympy
-How to Run
+```
 
-Clone the repository:
+---
 
+## How to Run
+
+1. Clone the repository:
+```bash
 git clone https://github.com/your-username/repository-name.git
+```
 
-Open the project folder
+2. Open the project folder
 
-Run the Python file:
-
+3. Run the Python file:
+```bash
 python assignment.py
-Output
-Data Simulation
+```
 
-Generated wait time datasets for regular and busy days
+---
 
-Cleaned normal distribution (no negative values)
+## Output
 
-Visualization
+### Data Simulation
+- Generated wait time datasets for regular and busy days  
+- Negative values removed from normal distribution  
 
-Histogram of Uniform Distribution
+### Visualization
+- Histogram of Uniform Distribution (Regular Days)  
+- Histogram of Normal Distribution (Busy Days)  
 
-Histogram of Normal Distribution
-
-Statistical Results
-
+### Statistical Results
 Displays:
+- Mean  
+- Median  
+- Standard Deviation  
+- Maximum Wait Time  
 
-Mean
+---
 
-Median
+## Learning Outcomes
+- Understanding probability distributions in simulation  
+- Working with NumPy for random data generation  
+- Comparing uniform and normal distributions  
+- Visualizing data using Matplotlib  
+- Performing statistical analysis  
+- Applying simulation concepts to real-life scenarios  
 
-Standard Deviation
+---
 
-Maximum Wait Time
-
-Learning Outcomes
-
-Understanding probability distributions in simulation
-
-Working with NumPy for random data generation
-
-Comparing uniform and normal distributions
-
-Visualizing data using Matplotlib
-
-Performing statistical analysis
-
-Applying simulation concepts to real-world problems
-
-Author
-
-Ismam Ahmed
-CSE 413 – Simulation and Modeling Lab
-Spring 2026
+## Author
+**Ismam Ahmed**  
+CSE 413 – Simulation and Modeling Lab  
+Spring 2026  
